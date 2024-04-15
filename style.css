@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.container {
+    background-color: black;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #001621;
+    display: flex;
+    padding: 16px 36px;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    border-bottom: 2px solid gray;
+    z-index: 1;
+
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 24px;
+    column-gap: 140px;
+}
+
+.navbar ul a {
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    padding: 4px 12px;
+}
+
+.navbar ul a:hover {
+    background-color: #0038ff;
+    transform: scale(1.2);
+    transition: all ease-in-out 0.3s;
+    color: white;
+
+}
+
+.main {
+    margin: 0px auto;
+    min-height: 80vh;
+    background-image: url(adobe.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    background-color: rgb(19, 2, 2);
+    height: 88vw;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.blacklayer {
+    background-color: rgba(0, 0, 0, 0.81);
+    height: 80vw;
+}
+
+.main1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 35px;
+    color: white;
+    padding: 160px 0px 0px 0px;
+
+}
+
+.DBMSintro {
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+.main1 h1 {
+    font-size: 90px;
+    cursor: pointer;
+    padding: 7px 16px;
+    border-radius: 10px;
+    text-align: center;
+    animation: bounce 3s 1 alternate forwards;
+}
+
+@keyframes bounce {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translateY(-10px);
+        background-color: blue;
+        
+    }
+}
+
+.main1 h1:hover {
+    /* transition: all ease-in-out 0.3s; */
+}
+
+.main1 ul {
+    width: 80vw;
+    font-size: 22px;
+}
+
+.main ul li:hover {
+    color: gray;
+    transition: all ease-in-out 0.2s;
+}
+
+.DBMSintro {
+    width: 84%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.DBMSintro:hover {
+    color: gray;
+    transition: all ease-in-out 0.2s;
+}
+
+.footer {
+    background-color: #001621;
+    padding: 15px 50px 36px 50px;
+    box-sizing: border-box;
+    /* margin: 0px 20px; */
+    border-top: 2px solid gray;
+    display: flex;
+    column-gap: 35px;
+    color: gray;
+}
+
+.about {
+    border-right: 2px solid white;
+    padding-right: 22px;
+}
+
+.about h2,
+.contact h2 {
+    margin-bottom: 12px;
+    cursor: pointer;
+    color: white;
+}
+
+.about ol,
+.contact ol {
+    list-style-type: none;
+}
+
+.about ol li,
+.contact ol li {
+    margin-bottom: 5px;
+}
+
+.about ol li:hover,
+.contact ol li:hover {
+    color: white;
+}
+
+.contact h2:hover,
+.about h2:hover {
+    text-decoration-line: underline;
+    text-decoration-color: gray;
+
+}
+
+/* .main{
+    display: flex;
+    background-color: black;
+    height: 90vh;
+    color: white;
+    column-gap: 12px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    visibility: hidden;
+}
+.Questions {
+    background-color:#0a0025;
+    width: 22vw;
+    height: 95%;
+    overflow-y: scroll;
+    padding: 16px 20px;
+    box-sizing: border-box;
+}
+.Questions ol{
+    list-style-position: inside;
+}
+.Questions ol a {
+    text-decoration: none;
+    color: white;
+}
+.Questions ol a li{
+    margin-bottom: 5px;
+}
+.Questions ol a li:hover{
+    color: yellow;
+    cursor: pointer;
+}
+.Questions h1{
+    margin-bottom: 12px;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 2px 10px;
+    width: 9vw;
+    text-align: center;
+}
+.Questions h1:hover{
+    background-color: blue;
+    transition: background ease-in-out 0.5s;
+}
+.Solutions{
+    background-color: #00002c;
+    width:74vw;
+    height: 95%;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    padding: 16px 20px;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading h1{
+    margin-bottom: 12px;
+    cursor: pointer;
+    padding: 2px 10px;
+}
+
+.Solutions code{
+    color: yellow;
+}
+.buttons {
+    display: flex;
+    column-gap: 6px;
+    align-items: center;
+}
+.previous,.next {
+    height: 26px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: transparent;
+    background-color: black;
+    color: white;
+}
+.previous:hover,.next:hover{
+    box-shadow: 0px 0px 4px 0px lightblue;
+}
+*/
+::-webkit-scrollbar {
+    background-color: lightblue;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(4, 4, 138);
+}
